@@ -42,13 +42,13 @@
 
             <div class="form-group">
                 <div class="${properties.kcLabelWrapperClass!}">
-                    <label for="user.attributes.dob" class="${properties.kcLabelClass!}">Phone Number</label>
+                    <label for="user.attributes.phone" class="${properties.kcLabelClass!}">Phone Number</label>
                 </div>
 
                 <div class="${properties.kcInputWrapperClass!}">
                     <input type="text" class="${properties.kcInputClass!}" 
-                    id="user.attributes.dob" name="user.attributes.dob" 
-                    value="${(register.formData['user.attributes.dob']!'')}"/>
+                    id="user.attributes.phone" name="user.attributes.phone" 
+                    value="${(register.formData['user.attributes.phone']!'')}"/>
                 </div>
             </div>
 
