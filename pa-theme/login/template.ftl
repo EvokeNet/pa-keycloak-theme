@@ -14,7 +14,7 @@
             <meta name="${meta?split('==')[0]}" content="${meta?split('==')[1]}"/>
         </#list>
     </#if>
-    <title>${msg("loginTitle",("Policy Academy"))}</title>
+    <title>${msg("loginTitle",("Education Policy Academy"))}</title>
     <link rel="icon" href="${url.resourcesPath}/img/favicon-32x32.png" />
     <#if properties.stylesCommon?has_content>
         <#list properties.stylesCommon?split(' ') as style>
