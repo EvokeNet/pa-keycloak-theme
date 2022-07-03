@@ -2,12 +2,10 @@
     background: none;
 }
 
-.login-pf body {
-    height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background: linear-gradient(to bottom, #140F3F  0%, #9933FF 100%);
+.login-pf-page {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #000000  0%, #140F3F 100%);
 }
 
 .login-pf a:hover {
@@ -67,7 +65,7 @@ textarea.pf-c-form-control {
     border-radius: 32px;
     font-family: 'Bungee';
     letter-spacing: 2px;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     background:  #FF6666;
 }
 
@@ -275,9 +273,12 @@ a#kc-current-locale-link::after {
 }
 
 #kc-info-wrapper {
-    font-size: 13px;
+    font-size: medium;
     padding: 15px 35px;
-    background-color: #F0F0F0;
+    color: #FFFFFF;
+    background-color: #4F536A;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 #kc-form-options span {
@@ -353,8 +354,16 @@ a#kc-current-locale-link::after {
 /*PHONE*/
 @media (max-width: 767px) {
     .login-pf-page .card-pf {
-        width: 95%;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
         box-shadow: 0 0;
+    }
+
+    #kc-info-wrapper{
+        width: 90%;
+        box-shadow: 0 0;
+        margin: auto;
     }
 
     .kc-social-grid {
