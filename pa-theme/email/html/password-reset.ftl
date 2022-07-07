@@ -1,7 +1,7 @@
 <html>
 <body style="
     text-align:justify;
-    font-size: large;
+    font-size: medium;
     font-family:'Segoe UI', sans-serif;
     margin:auto; 
     min-width:480px; 
@@ -23,6 +23,6 @@
     
     ${kcSanitize(msg("passwordResetBodyHtml",link, linkExpiration, "Education Policy Academy", linkExpirationFormatter(linkExpiration)))?no_esc}
 
-    <p style="font-size:smaller; text-align:center">©The World Bank Group</p>
+    <p style="font-size:x-small; text-align:center">©The World Bank Group</p>
 </body>
 </html>
