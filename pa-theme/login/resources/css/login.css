@@ -3,7 +3,7 @@
 }
 
 .login-pf-page{
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background: linear-gradient(to bottom, #68b8d1  0%, #d9dbdb 100%);
 }
@@ -25,14 +25,18 @@
     box-shadow: var(--pf-global--BoxShadow--lg);
 }
 
+.form-horizontal .form-group{
+    margin-bottom: 30px;
+}
+
 .pf-c-form__label-text{
     color: #498EB3;
 }
 
 .pf-c-form-control{
     border-radius: 20px;
-    padding: 22px 30px;
     height: auto;
+    padding-left: 18px;
     font-size: medium;
     border-bottom-width: 3px;
     border-bottom-color: #0aa16f;
@@ -50,8 +54,8 @@ textarea.pf-c-form-control {
 .pf-c-form-control:focus{
     outline: 0px solid transparent;
     border-radius: 20px;
+    padding-left: 18px;
     border-bottom-width: 3px;
-    padding: 22px 30px;
     font-size: medium;
 }
 

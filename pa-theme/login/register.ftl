@@ -1,5 +1,5 @@
 <#import "template.ftl" as layout>
-<@layout.registrationLayout displayMessage=!messagesPerField.existsError('firstName','lastName','email','username','password','password-confirm'); section>
+ <@layout.registrationLayout displayMessage=!messagesPerField.existsError( 'firstName', 'lastName', 'email', 'username', 'jobTitle', 'password', 'password-confirm'); section>
     <#if section = "header">
         ${msg("registerTitle")}
     <#elseif section = "form">
@@ -78,6 +78,53 @@
                 </div>
             </#if>
 
+            <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('group',properties.kcFormGroupErrorClass!)}">
+                <div class="${properties.kcLabelWrapperClass!}">
+                    <label for="jobTitle" class="${properties.kcLabelClass!}">${msg("jobTitle")}</label>
+                </div>
+                <div class="${properties.kcInputWrapperClass!}">
+                    <select id="user.attributes.jobTitle" class="${properties.kcInputClass!}" name="user.attributes.jobTitle" value="${(register.formData['user.attributes.jobTitle']!'')}">
+                        <option value="STC" selected>${msg("jobSTC")}</option>
+                        <option value="ETC">${msg("jobETC")}</option>
+                        <option value="Admin">${msg("jobAdmin")}</option>
+                        <option value="Economist/Education specialists/etc.">${msg("jobEconomist")}</option>
+                        <option value="Senior Economist/Education specialist/etc.">${msg("jobSenior")}</option>
+                        <option value="Practice manager">${msg("jobPractice")}</option>
+                        <option value="Practice manager">${msg("jobOtherSpecify")}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('group',properties.kcFormGroupErrorClass!)}">
+                <div class="${properties.kcLabelWrapperClass!}">
+                    <label for="jobExperience" class="${properties.kcLabelClass!}">${msg("jobExperience")}</label>
+                </div>
+                <div class="${properties.kcInputWrapperClass!}">
+                    <select id="user.attributes.jobExperience" class="${properties.kcInputClass!}" name="user.attributes.jobExperience" value="${(register.formData['user.attributes.jobExperience']!'')}">
+                        <option value="Less than 1 year" selected>${msg("jobLess1")}</option>
+                        <option value="1-4 years">${msg("job1-4")}</option>
+                        <option value="5-9 years">${msg("job5-9")}</option>
+                        <option value="10-14 years">${msg("job10-14")}</option>
+                        <option value="15 years or more">${msg("job15")}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('group',properties.kcFormGroupErrorClass!)}">
+                <div class="${properties.kcLabelWrapperClass!}">
+                    <label for="jobEducationExperience" class="${properties.kcLabelClass!}">${msg("jobEducationExperience")}</label>
+                </div>
+                    <div class="${properties.kcInputWrapperClass!}">
+                        <select id="user.attributes.jobEducationExperience" class="${properties.kcInputClass!}" name="user.attributes.jobEducationExperience" value="${(register.formData['user.attributes.jobEducationExperience']!'')}">
+                            <option value="Less than 1 year" selected>${msg("jobLess1")}</option>
+                            <option value="1-4 years">${msg("job1-4")}</option>
+                            <option value="5-9 years">${msg("job5-9")}</option>
+                            <option value="10-14 years">${msg("job10-14")}</option>
+                            <option value="15 years or more">${msg("job15")}</option>
+                        </select>
+                </div>
+            </div>
+
             <#if passwordRequired??>
                 <div class="${properties.kcFormGroupClass!}">
                     <div class="${properties.kcLabelWrapperClass!}">
@@ -124,7 +171,7 @@
                     </div>
                 </div>
             </#if>
-
+            
             <div class="${properties.kcFormGroupClass!}">
                 <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
                     <div class="${properties.kcFormOptionsWrapperClass!}">

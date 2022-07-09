@@ -3,7 +3,7 @@
 }
 
 .login-pf-page {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background: linear-gradient(to bottom, #000000  0%, #140F3F 100%);
 }
