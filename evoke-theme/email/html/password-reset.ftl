@@ -14,7 +14,7 @@
         margin-right: auto;
         width: 45%;"
     
-        src="https://evokenet.org/evoke/pluginfile.php/1/theme_moove/logo/1657213288/EVOKE_logo.png" 
+        src="https://evokenet.org/evoke/pluginfile.php/1/theme_moove/logo/1658244365/evoke.png" 
         alt="EVOKE"
     >
     
