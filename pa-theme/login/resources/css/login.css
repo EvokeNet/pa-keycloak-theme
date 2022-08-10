@@ -5,15 +5,11 @@
 .login-pf-page{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(to bottom, #68b8d1  0%, #d9dbdb 100%);
+    background: #eef5f9;
 }
 
 .login-pf a:hover {
     color: #0099d3;
-}
-
-.login-pf-page .card-pf {
-    border-radius: 10px;
 }
 
 .card-pf {
@@ -21,7 +17,7 @@
     padding: 0 20px;
     max-width: 500px;
     border-top: 4px solid;
-    border-color: #173e94;
+    border-color: #140f3f;
     box-shadow: var(--pf-global--BoxShadow--lg);
 }
 
@@ -30,16 +26,15 @@
 }
 
 .pf-c-form__label-text{
-    color: #498EB3;
+    color: #1d2125;
 }
 
 .pf-c-form-control{
-    border-radius: 20px;
     height: auto;
     padding-left: 18px;
     font-size: medium;
     border-bottom-width: 3px;
-    border-bottom-color: #0aa16f;
+    border-bottom-color: #003d6b;
 }
 
 textarea.pf-c-form-control {
@@ -48,12 +43,11 @@ textarea.pf-c-form-control {
 
 .pf-c-form-control:hover{
     border-bottom-width: 3px;
-    border-bottom-color: #0fe29c;
+    border-bottom-color: #007bda;
 }
 
 .pf-c-form-control:focus{
     outline: 0px solid transparent;
-    border-radius: 20px;
     padding-left: 18px;
     border-bottom-width: 3px;
     font-size: medium;
@@ -68,7 +62,6 @@ textarea.pf-c-form-control {
     border: none;
     padding: 10px 10px;
     font-size: medium;
-    border-radius: 32px;
     font-family:'Segoe UI', sans-serif;
     font-weight: bold;
     color: rgb(255, 255, 255);
@@ -77,7 +70,7 @@ textarea.pf-c-form-control {
 
 .pf-c-button:hover{
     outline: none;
-    background: #0dc98a !important;
+    background: #0cc486 !important;
 }
 
 .pf-c-check__label, .pf-c-radio__label {
@@ -168,7 +161,7 @@ h1#kc-page-title {
     text-transform: uppercase;
     font-weight: bold;
     font-family:'Segoe UI', sans-serif;
-    color: #000000;
+    color: #455a64;
 }
 
 #kc-header-wrapper {
@@ -187,7 +180,7 @@ h1#kc-page-title {
 }
 
 #kc-a-forgot{
-    color: #498EB3;
+    color: #005fa7;
     font-family:'Segoe UI', sans-serif;
 }
 
@@ -209,7 +202,7 @@ h1#kc-page-title {
 }
 
 #kc-locale-dropdown a {
-    color: #498EB3;
+    color: #005fa7;
     text-align: right;
     font-size: medium;
     font-weight: bold;
@@ -282,13 +275,11 @@ a#kc-current-locale-link::after {
     font-size: medium;
     padding: 15px 35px;
     color: #FFFFFF;
-    background-color: #173e94;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    background-color: #140f3f;
 }
 
 #kc-a-register{
-    color: #00ccff;
+    color: #0099d3;
 }
 
 #kc-form-options span {
