@@ -106,6 +106,7 @@
                         <option value="5-9 years">${msg("job5-9")}</option>
                         <option value="10-14 years">${msg("job10-14")}</option>
                         <option value="15 years or more">${msg("job15")}</option>
+                        <option value="N/A - Not Applicable">${msg("jobNA")}</option>
                     </select>
                 </div>
             </div>

@@ -31,14 +31,9 @@
 
 .pf-c-form-control{
     height: auto;
-    padding-left: 18px;
     font-size: medium;
     border-bottom-width: 3px;
     border-bottom-color: #003d6b;
-}
-
-textarea.pf-c-form-control {
-	height: auto;
 }
 
 .pf-c-form-control:hover{
@@ -48,7 +43,6 @@ textarea.pf-c-form-control {
 
 .pf-c-form-control:focus{
     outline: 0px solid transparent;
-    padding-left: 18px;
     border-bottom-width: 3px;
     font-size: medium;
 }
